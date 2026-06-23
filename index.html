@@ -6,329 +6,209 @@
   <title>MedMio — Privacy Policy</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f8fafc;
-      color: #1e293b;
-      line-height: 1.7;
-    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #F2F7FD; color: #1e293b; line-height: 1.7; }
     header {
       background: linear-gradient(135deg, #0C3E70, #185FA5, #378ADD);
-      color: white;
-      padding: 48px 24px 40px;
-      text-align: center;
+      padding: 40px 24px 32px;
     }
-    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
-    header p  { font-size: 1rem; opacity: 0.85; }
-    .badge {
-      display: inline-block;
-      background: rgba(255,255,255,0.2);
-      border-radius: 999px;
-      padding: 4px 16px;
-      font-size: 0.8rem;
-      margin-top: 12px;
-    }
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 24px 80px;
-    }
-    .disclaimer {
-      background: #EEF4FB;
-      border-left: 4px solid #185FA5;
-      border-radius: 10px;
-      padding: 16px 20px;
-      margin-bottom: 40px;
-      font-size: 0.95rem;
-      color: #0C3E70;
-      font-weight: 500;
-    }
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #0C3E70;
-      margin: 36px 0 12px;
-      padding-bottom: 6px;
-      border-bottom: 2px solid #E2EEF9;
-    }
-    p  { margin-bottom: 12px; font-size: 0.97rem; color: #334155; }
-    ul { margin: 8px 0 16px 20px; }
-    ul li { margin-bottom: 6px; font-size: 0.97rem; color: #334155; }
-    .highlight {
-      background: #f0fdf4;
-      border-left: 4px solid #1D9E75;
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 16px 0;
-      font-weight: 500;
-      color: #064e3b;
-    }
-    .warning {
-      background: #fff7ed;
-      border-left: 4px solid #f59e0b;
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 16px 0;
-      font-size: 0.95rem;
-      color: #92400e;
-    }
-    .lang-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      margin: 16px 0;
-    }
-    .lang-card {
-      background: white;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 12px 16px;
-      font-size: 0.9rem;
-    }
-    .lang-card strong { display: block; color: #0C3E70; margin-bottom: 4px; }
-    .toc {
-      background: white;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 20px 24px;
-      margin-bottom: 32px;
-    }
-    .toc h3 { font-size: 0.9rem; color: #64748b; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .header-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; gap: 16px; }
+    .header-mascot { width: 72px; height: 88px; object-fit: contain; }
+    .header-text h1 { font-size: 1.8rem; font-weight: 700; color: #fff; }
+    .header-text .tagline { font-size: 0.85rem; font-style: italic; color: rgba(255,255,255,0.65); margin-top: 2px; }
+    .header-text .subtitle { font-size: 0.95rem; color: rgba(255,255,255,0.85); margin-top: 6px; }
+    .badge { display: inline-block; background: rgba(255,255,255,0.2); border-radius: 999px; padding: 3px 14px; font-size: 0.78rem; color: #fff; margin-top: 8px; }
+    nav { background: rgba(255,255,255,0.12); border-top: 1px solid rgba(255,255,255,0.15); }
+    .nav-inner { max-width: 760px; margin: 0 auto; display: flex; gap: 0; }
+    .nav-inner a { color: rgba(255,255,255,0.85); text-decoration: none; padding: 10px 20px; font-size: 0.88rem; font-weight: 500; border-bottom: 2px solid transparent; transition: all 0.2s; }
+    .nav-inner a:hover, .nav-inner a.active { color: #fff; border-bottom-color: #fff; background: rgba(255,255,255,0.08); }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+    .disclaimer { background: #EEF4FB; border-left: 4px solid #185FA5; border-radius: 10px; padding: 16px 20px; margin-bottom: 32px; font-size: 0.93rem; color: #0C3E70; font-weight: 500; }
+    h2 { font-size: 1.1rem; font-weight: 700; color: #0C3E70; margin: 32px 0 10px; padding-bottom: 6px; border-bottom: 2px solid #E2EEF9; }
+    p { margin-bottom: 12px; font-size: 0.95rem; color: #334155; }
+    ul { margin: 8px 0 14px 20px; }
+    ul li { margin-bottom: 6px; font-size: 0.95rem; color: #334155; }
+    .highlight { background: #f0fdf4; border-left: 4px solid #1D9E75; border-radius: 8px; padding: 14px 18px; margin: 14px 0; font-weight: 500; color: #064e3b; font-size: 0.93rem; }
+    .warning { background: #fff7ed; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 14px 18px; margin: 14px 0; font-size: 0.93rem; color: #92400e; }
+    .danger { background: #FEF2F2; border-left: 4px solid #EF4444; border-radius: 8px; padding: 14px 18px; margin: 14px 0; font-size: 0.93rem; color: #7F1D1D; }
+    .toc { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 22px; margin-bottom: 28px; }
+    .toc h3 { font-size: 0.8rem; color: #64748b; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.06em; }
     .toc ol { margin-left: 16px; }
-    .toc ol li { font-size: 0.9rem; margin-bottom: 4px; }
+    .toc ol li { font-size: 0.88rem; margin-bottom: 3px; }
     .toc a { color: #185FA5; text-decoration: none; }
-    .toc a:hover { text-decoration: underline; }
-    footer {
-      text-align: center;
-      padding: 32px;
-      font-size: 0.85rem;
-      color: #94a3b8;
-      border-top: 1px solid #e2e8f0;
-    }
+    .version-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 14px; font-size: 0.83rem; color: #64748b; margin-bottom: 20px; }
+    .lang-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin: 14px 0; }
+    .lang-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px 14px; font-size: 0.88rem; }
+    .lang-card strong { display: block; color: #0C3E70; margin-bottom: 3px; }
+    footer { background: linear-gradient(135deg, #0C3E70, #185FA5); color: rgba(255,255,255,0.75); text-align: center; padding: 28px 24px; font-size: 0.83rem; line-height: 1.8; }
+    footer a { color: rgba(255,255,255,0.9); }
+    footer .footer-mascot { width: 40px; margin-bottom: 10px; opacity: 0.9; }
     a { color: #185FA5; }
-    .version-box {
-      background: white;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 12px 16px;
-      font-size: 0.85rem;
-      color: #64748b;
-      margin-bottom: 24px;
-    }
   </style>
 </head>
 <body>
-
 <header>
-  <h1>🕐 MedMio</h1>
-  <p>Privacy Policy — Política de Privacidad</p>
-  <span class="badge">Version 1.0 · Effective / Vigente: June 22, 2026</span>
+  <div class="header-inner">
+    <img src="./mascota_wave.png" alt="MedMio mascot" class="header-mascot" />
+    <div class="header-text">
+      <h1>MedMio</h1>
+      <div class="tagline">tu medicación, a tiempo.</div>
+      <div class="subtitle">Privacy Policy · Política de Privacidad</div>
+      <span class="badge">Version 1.0 · June 22, 2026</span>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-inner">
+      <a href="./index.html" class="active">🔒 Privacy Policy</a>
+      <a href="./Terms.html">📋 Terms of Service</a>
+    </div>
+  </nav>
 </header>
 
 <main>
-
-  <div class="version-box">
-    📋 This policy was last updated on <strong>June 22, 2026</strong>. 
-    Policy version: <strong>1.0</strong>. 
-    App version covered: <strong>1.0.0+</strong><br>
-    Esta política fue actualizada por última vez el <strong>22 de junio de 2026</strong>.
-  </div>
+  <div class="version-box">Last updated: <strong>June 22, 2026</strong> · Version <strong>1.0</strong> · App version: <strong>1.0.0+</strong></div>
 
   <div class="disclaimer">
-    ⚕️ <strong>MEDICAL DISCLAIMER:</strong> MedMio is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. MedMio is a medication <em>reminder</em> tool only. Always consult a qualified healthcare professional for medical advice, diagnosis, or treatment. Never disregard professional medical advice or delay seeking it because of something you read or saw in this app.<br><br>
-    <strong>AVISO MÉDICO:</strong> MedMio no es un dispositivo médico y no diagnostica, trata, cura ni previene ninguna condición médica. MedMio es únicamente una herramienta de <em>recordatorio</em> de medicamentos. Consulta siempre a un profesional de salud calificado para consejos médicos, diagnóstico o tratamiento. Nunca ignores el consejo médico profesional ni demores en buscarlo debido a algo que leíste o viste en esta app.
+    ⚕️ <strong>MEDICAL DISCLAIMER:</strong> MedMio is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. Always consult a healthcare professional for medical advice, diagnosis, or treatment.<br><br>
+    MedMio no es un dispositivo médico. Consulta siempre a un profesional de salud para consejos médicos, diagnóstico o tratamiento.
   </div>
 
   <div class="toc">
     <h3>Table of Contents / Índice</h3>
     <ol>
-      <li><a href="#who">Who We Are / Quiénes somos</a></li>
-      <li><a href="#scope">Scope / Alcance</a></li>
-      <li><a href="#data">Data We Collect / Datos que recopilamos</a></li>
-      <li><a href="#local">What Stays on Your Device / Qué queda en tu dispositivo</a></li>
-      <li><a href="#ocr">Optional OCR Feature / Función OCR opcional</a></li>
-      <li><a href="#no-tracking">No Tracking, No Ads / Sin rastreo, sin anuncios</a></li>
-      <li><a href="#no-account">No Account Required / Sin cuenta requerida</a></li>
-      <li><a href="#notifications">Notifications / Notificaciones</a></li>
-      <li><a href="#pdf">PDF Export / Exportación PDF</a></li>
-      <li><a href="#retention">Data Retention / Retención de datos</a></li>
-      <li><a href="#deletion">How to Delete Your Data / Cómo eliminar tus datos</a></li>
-      <li><a href="#third-party">Third-Party Services / Servicios de terceros</a></li>
-      <li><a href="#security">Security / Seguridad</a></li>
-      <li><a href="#children">Children / Menores de edad</a></li>
-      <li><a href="#hipaa">HIPAA Notice / Aviso HIPAA</a></li>
-      <li><a href="#rights">Your Rights / Tus derechos</a></li>
-      <li><a href="#changes">Changes / Cambios</a></li>
-      <li><a href="#contact">Contact / Contacto</a></li>
+      <li><a href="#who">Who We Are</a></li>
+      <li><a href="#scope">Scope</a></li>
+      <li><a href="#data">Data We Collect</a></li>
+      <li><a href="#local">What Stays on Your Device</a></li>
+      <li><a href="#ocr">Optional OCR Feature</a></li>
+      <li><a href="#no-tracking">No Tracking, No Ads</a></li>
+      <li><a href="#no-account">No Account Required</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+      <li><a href="#pdf">PDF Export</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#deletion">How to Delete Your Data</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#hipaa">HIPAA Notice</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ol>
   </div>
 
   <h2 id="who">1. Who We Are / Quiénes somos</h2>
-  <p>MedMio is an independent medication reminder application. It is not affiliated with any hospital, clinic, pharmacy, insurance company, or healthcare provider.</p>
-  <p>MedMio es una aplicación independiente de recordatorio de medicamentos. No está afiliada con ningún hospital, clínica, farmacia, compañía de seguros ni proveedor de salud.</p>
-  <p>Contact / Contacto: <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a></p>
+  <p>MedMio is an independent medication reminder application, not affiliated with any hospital, clinic, pharmacy, insurance company, or healthcare provider.</p>
+  <p>Contact: <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a></p>
 
   <h2 id="scope">2. Scope / Alcance</h2>
-  <p>This Privacy Policy applies to the MedMio mobile application available on Google Play and the Apple App Store. It does not apply to any third-party websites or services linked from within the app.</p>
-  <p>Esta Política de Privacidad aplica a la aplicación móvil MedMio disponible en Google Play y Apple App Store. No aplica a sitios web o servicios de terceros enlazados desde la app.</p>
+  <p>This policy applies to the MedMio mobile app on Google Play and the Apple App Store. It does not apply to third-party websites or services linked from within the app.</p>
 
   <h2 id="data">3. Data We Collect / Datos que recopilamos</h2>
+  <div class="highlight">✅ MedMio does NOT collect, transmit, sell, share, or monetize any personal data by default.<br>✅ MedMio NO recopila, transmite, vende, comparte ni monetiza ningún dato personal por defecto.</div>
+  <p>MedMio does not use analytics SDKs, advertising SDKs, crash reporting services, or any third-party tracking tools that transmit data off your device.</p>
+
+  <h2 id="local">4. What Stays on Your Device</h2>
+  <p>All data is stored exclusively in a local SQLite database on your device and never transmitted:</p>
+  <ul>
+    <li>Medication names and doses</li>
+    <li>Reminder schedules and times</li>
+    <li>Dose history and adherence records</li>
+    <li>Your display name (optional)</li>
+    <li>Language and display preferences</li>
+    <li>Medication photos (if added)</li>
+    <li>Food instructions and notes</li>
+    <li>Inventory counts</li>
+  </ul>
+
+  <h2 id="ocr">5. Optional OCR Feature</h2>
+  <div class="warning">⚠️ This is <strong>optional</strong> — only activated if you tap the camera button. If you don't use it, no image data ever leaves your device.</div>
+  <p>When you photograph a medication label, the image may be sent to a secure server function to extract text via OCR. Images are processed in real time and immediately discarded — never stored on any server. The server does not log your identity, device ID, or medication name.</p>
+
+  <h2 id="no-tracking">6. No Tracking, No Ads</h2>
   <div class="highlight">
-    ✅ MedMio does NOT collect, transmit, sell, share, or monetize any personal data by default.<br>
-    ✅ MedMio NO recopila, transmite, vende, comparte ni monetiza ningún dato personal por defecto.
+    ✅ Zero advertising in MedMio.<br>
+    ✅ No tracking pixels, analytics libraries, advertising SDKs, or session replay tools.<br>
+    ✅ No data shared with advertising networks, data brokers, or marketing companies.<br>
+    ✅ No behavioral profiles built on users.
   </div>
-  <p>MedMio does not use analytics SDKs, advertising SDKs, crash reporting services, or any third-party tracking tools that would transmit data off your device without your explicit action.</p>
-  <p>MedMio no usa SDKs de analíticas, SDKs publicitarios, servicios de reporte de errores ni herramientas de rastreo de terceros que transmitan datos fuera de tu dispositivo sin tu acción explícita.</p>
+  <p>MedMio does NOT use: Google Analytics, Firebase, Facebook SDK, Amplitude, Mixpanel, Sentry, Crashlytics, AppsFlyer, Adjust, Branch, or any analytics/advertising service.</p>
 
-  <h2 id="local">4. What Stays on Your Device / Qué queda en tu dispositivo</h2>
-  <p>All of the following data is stored exclusively in a local SQLite database on your device and never transmitted:</p>
+  <h2 id="no-account">7. No Account Required</h2>
+  <p>No email, phone number, or any personal identifier is required. The name you optionally enter is stored only on your device.</p>
+
+  <h2 id="notifications">8. Notifications</h2>
+  <p>Reminders are scheduled entirely on your device using the times you configure. Notification content is processed locally and never transmitted to any server.</p>
+
+  <h2 id="pdf">9. PDF Export</h2>
+  <p>PDF reports are created entirely on your device. You control whether and with whom to share them. MedMio does not transmit PDFs to any server.</p>
+
+  <h2 id="retention">10. Data Retention</h2>
+  <p><strong>On your device:</strong> Data remains until you delete it, uninstall the app, or use "Delete All Data" in Settings. MedMio automatically removes dose history older than 18 months to maintain performance.</p>
+  <p><strong>On our servers:</strong> MedMio stores no personal data on servers. OCR images are discarded immediately after processing.</p>
+
+  <h2 id="deletion">11. How to Delete Your Data</h2>
   <ul>
-    <li>Medication names and doses / Nombres y dosis de medicamentos</li>
-    <li>Reminder schedules and times / Horarios y tiempos de recordatorio</li>
-    <li>Dose history and adherence records / Historial de dosis y registros de adherencia</li>
-    <li>Your display name (optional) / Tu nombre de perfil (opcional)</li>
-    <li>Language and display preferences / Preferencias de idioma y visualización</li>
-    <li>Medication photos (if added) / Fotos de medicamentos (si se agregan)</li>
-    <li>Food instructions and notes / Instrucciones de comida y notas</li>
-    <li>Inventory counts / Conteos de inventario</li>
+    <li><strong>In-app:</strong> Settings → Delete All Data → Confirm</li>
+    <li><strong>Uninstall:</strong> Removes all locally stored data from your device</li>
   </ul>
-  <p>This data never leaves your device unless you explicitly choose to export or share it (see PDF Export, Section 9).</p>
-  <p>Estos datos nunca salen de tu dispositivo a menos que tú elijas explícitamente exportarlos o compartirlos (ver Exportación PDF, Sección 9).</p>
 
-  <h2 id="ocr">5. Optional OCR Feature / Función OCR opcional</h2>
-  <div class="warning">
-    ⚠️ This section describes an <strong>optional</strong> feature. It is only activated if you explicitly tap the camera/photo button when adding a medication. If you do not use this feature, no image data ever leaves your device.<br><br>
-    Esta sección describe una función <strong>opcional</strong>. Solo se activa si explícitamente tocas el botón de cámara/foto al agregar un medicamento. Si no usas esta función, ningún dato de imagen sale de tu dispositivo.
-  </div>
-  <p><strong>What it does:</strong> When you choose to photograph a medication label, MedMio may send the image to a secure server-side function to extract the medication name and dosage using optical character recognition (OCR) technology.</p>
-  <p><strong>Qué hace:</strong> Cuando eliges fotografiar una etiqueta de medicamento, MedMio puede enviar la imagen a una función segura del lado del servidor para extraer el nombre del medicamento y la dosis usando tecnología de reconocimiento óptico de caracteres (OCR).</p>
-  <p><strong>What is NOT stored on servers:</strong></p>
+  <h2 id="third-party">12. Third-Party Services</h2>
   <ul>
-    <li>Images are processed in real time and immediately discarded / Las imágenes se procesan en tiempo real y se descartan inmediatamente</li>
-    <li>No image is stored on any server / Ninguna imagen se almacena en ningún servidor</li>
-    <li>No OCR results are retained after they are returned to your device / Ningún resultado de OCR se retiene después de devolverse a tu dispositivo</li>
-    <li>The server function does not log your identity, device ID, or medication name / La función del servidor no registra tu identidad, ID de dispositivo ni nombre del medicamento</li>
+    <li><strong>Supabase (optional, OCR only):</strong> Processes medication label images when you use the optional OCR feature. No personal data is stored. <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></li>
+    <li><strong>Google Play / Apple App Store:</strong> Their policies govern download and installation.</li>
+    <li><strong>Device OS notifications:</strong> Google and Apple policies apply to their notification infrastructure.</li>
   </ul>
-  <p><strong>Rate limiting:</strong> OCR requests are limited to 3 per day per device to prevent abuse. This limit is enforced locally on your device.</p>
-  <p><strong>Límite de uso:</strong> Las solicitudes OCR están limitadas a 3 por día por dispositivo para prevenir abuso. Este límite se aplica localmente en tu dispositivo.</p>
 
-  <h2 id="no-tracking">6. No Tracking, No Ads / Sin rastreo, sin anuncios</h2>
-  <div class="highlight">
-    ✅ MedMio contains zero advertising.<br>
-    ✅ MedMio does not use tracking pixels, analytics libraries, advertising SDKs, or session replay tools.<br>
-    ✅ MedMio does not share any data with advertising networks, data brokers, or marketing companies.<br>
-    ✅ MedMio does not build behavioral profiles of users.<br><br>
-    ✅ MedMio no contiene ningún anuncio.<br>
-    ✅ MedMio no usa píxeles de rastreo, librerías de analíticas, SDKs publicitarios ni herramientas de repetición de sesión.<br>
-    ✅ MedMio no comparte datos con redes publicitarias, corredores de datos ni empresas de marketing.<br>
-    ✅ MedMio no construye perfiles de comportamiento de usuarios.
-  </div>
-
-  <h2 id="no-account">7. No Account Required / Sin cuenta requerida</h2>
-  <p>MedMio does not require and does not offer user accounts. No email address, phone number, name, or any personal identifier is required to use MedMio. The name you optionally enter in the app is stored only on your device.</p>
-  <p>MedMio no requiere ni ofrece cuentas de usuario. No se requiere correo electrónico, número de teléfono, nombre ni ningún identificador personal para usar MedMio. El nombre que opcionalmente ingresas en la app se almacena solo en tu dispositivo.</p>
-
-  <h2 id="notifications">8. Notifications / Notificaciones</h2>
-  <p>Medication reminders are scheduled entirely on your device using the times you configure. Notification content (medication name, time, dose) is processed locally and never transmitted to any server. MedMio uses your device's built-in notification system.</p>
-  <p>Los recordatorios de medicamentos se programan completamente en tu dispositivo usando los horarios que configuras. El contenido de las notificaciones (nombre del medicamento, hora, dosis) se procesa localmente y nunca se transmite a ningún servidor. MedMio usa el sistema de notificaciones incorporado de tu dispositivo.</p>
-
-  <h2 id="pdf">9. PDF Export / Exportación PDF</h2>
-  <p>MedMio can generate a PDF report of your medication adherence history. This report is created entirely on your device. You control whether and with whom to share it. When you share a PDF using your device's share function, it is governed by the privacy policy of the app or service you choose to share it with (e.g., email, messaging). MedMio does not transmit PDFs to any server.</p>
-  <p>MedMio puede generar un reporte PDF de tu historial de adherencia a medicamentos. Este reporte se crea completamente en tu dispositivo. Tú controlas si lo compartes y con quién. Cuando compartes un PDF usando la función de compartir de tu dispositivo, está regido por la política de privacidad de la app o servicio con el que eliges compartirlo. MedMio no transmite PDFs a ningún servidor.</p>
-
-  <h2 id="retention">10. Data Retention / Retención de datos</h2>
-  <p><strong>On your device:</strong> All data remains on your device until you delete it manually, uninstall the app, or use the "Delete All Data" option in Settings. MedMio automatically removes dose history records older than 18 months from your local database to maintain performance.</p>
-  <p><strong>En tu dispositivo:</strong> Todos los datos permanecen en tu dispositivo hasta que los elimines manualmente, desinstales la app o uses la opción "Eliminar todos los datos" en Configuración. MedMio elimina automáticamente registros de historial de dosis con más de 18 meses de antigüedad de tu base de datos local para mantener el rendimiento.</p>
-  <p><strong>On our servers:</strong> MedMio does not store any personal data on servers. OCR images are discarded immediately after processing (see Section 5). No retention period applies because no data is retained.</p>
-  <p><strong>En nuestros servidores:</strong> MedMio no almacena ningún dato personal en servidores. Las imágenes de OCR se descartan inmediatamente después del procesamiento (ver Sección 5). No aplica ningún período de retención porque no se retiene ningún dato.</p>
-
-  <h2 id="deletion">11. How to Delete Your Data / Cómo eliminar tus datos</h2>
-  <p>You can delete all your data at any time:</p>
+  <h2 id="security">13. Security</h2>
   <ul>
-    <li><strong>In-app:</strong> Settings → Delete All Data → Confirm / <strong>En la app:</strong> Configuración → Eliminar todos los datos → Confirmar</li>
-    <li><strong>Uninstall:</strong> Uninstalling MedMio removes all locally stored data from your device / <strong>Desinstalar:</strong> Desinstalar MedMio elimina todos los datos almacenados localmente de tu dispositivo</li>
+    <li>Local database uses SQLite with WAL mode for data integrity</li>
+    <li>Sensitive identifiers stored in iOS Keychain / Android EncryptedSharedPreferences</li>
+    <li>All network communications use HTTPS</li>
+    <li>No passwords or financial data stored or processed</li>
   </ul>
-  <p>Because MedMio does not store your data on any server, there is no server-side data to request deletion of.</p>
-  <p>Dado que MedMio no almacena tus datos en ningún servidor, no hay datos del lado del servidor para solicitar eliminación.</p>
 
-  <h2 id="third-party">12. Third-Party Services / Servicios de terceros</h2>
-  <p>MedMio uses the following third-party infrastructure in limited, specific circumstances:</p>
+  <h2 id="children">14. Children</h2>
+  <p>MedMio is not directed at children under 13 (or 16 in the EU). We do not knowingly collect data from children. Contact <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a> if you believe a child has used the app.</p>
+
+  <h2 id="hipaa">15. HIPAA Notice</h2>
+  <p>MedMio is not a HIPAA-covered entity and does not claim HIPAA compliance. All data is stored locally on your device and not transmitted to or maintained by MedMio on any server.</p>
+  <div class="warning">⚠️ If you share MedMio data with a healthcare provider, that provider's own HIPAA obligations govern how they handle that information.</div>
+
+  <h2 id="rights">16. Your Rights</h2>
   <ul>
-    <li><strong>Supabase (optional, OCR only):</strong> A secure server-side function hosted on Supabase processes medication label images when you use the optional OCR feature. Supabase's privacy policy applies to this processing: <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>. No personal data is stored.</li>
-    <li><strong>Google Play / Apple App Store:</strong> Distribution platforms. Their privacy policies govern the download and installation process.</li>
-    <li><strong>Device OS notifications:</strong> Android and iOS notification systems are used to deliver reminders. Google and Apple privacy policies apply to their respective notification infrastructure.</li>
-  </ul>
-  <p>MedMio does NOT use: Google Analytics, Firebase, Facebook SDK, Amplitude, Mixpanel, Sentry, Crashlytics, AppsFlyer, Adjust, Branch, RevenueCat, or any other analytics, advertising, or crash reporting service that would transmit personal data to third parties.</p>
-  <p>MedMio NO usa: Google Analytics, Firebase, Facebook SDK, Amplitude, Mixpanel, Sentry, Crashlytics, AppsFlyer, Adjust, Branch, RevenueCat ni ningún otro servicio de analíticas, publicidad o reporte de errores que transmita datos personales a terceros.</p>
-
-  <h2 id="security">13. Security / Seguridad</h2>
-  <p>MedMio implements the following security measures:</p>
-  <ul>
-    <li>Local database uses SQLite with WAL (Write-Ahead Logging) mode for data integrity</li>
-    <li>Sensitive device identifiers are stored using platform secure storage (iOS Keychain / Android EncryptedSharedPreferences)</li>
-    <li>The app uses HTTPS for all network communications</li>
-    <li>No passwords or financial data are stored or processed</li>
-    <li>The app does not request unnecessary device permissions</li>
-  </ul>
-  <p>However, no method of electronic storage is 100% secure. We cannot guarantee absolute security of data stored on your device, which is subject to the security of your device itself.</p>
-  <p>Sin embargo, ningún método de almacenamiento electrónico es 100% seguro. No podemos garantizar seguridad absoluta de los datos almacenados en tu dispositivo, que depende de la seguridad del dispositivo en sí.</p>
-
-  <h2 id="children">14. Children / Menores de edad</h2>
-  <p>MedMio is not directed at children under the age of 13 (or under 16 in the European Union). We do not knowingly collect personal information from children. If you believe a child has provided personal information through MedMio, please contact us at <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a> and we will take steps to address the situation. Because MedMio stores data only locally on the device, parental control of the device is the primary mechanism for protecting children's data.</p>
-  <p>MedMio no está dirigido a menores de 13 años (o menores de 16 en la Unión Europea). No recopilamos conscientemente información personal de menores. Si crees que un menor ha proporcionado información personal a través de MedMio, contáctanos en <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a>.</p>
-
-  <h2 id="hipaa">15. HIPAA Notice / Aviso HIPAA</h2>
-  <p>MedMio is not a HIPAA-covered entity and is not a business associate of any covered entity. MedMio does not create, receive, maintain, or transmit Protected Health Information (PHI) as defined under HIPAA, because all data is stored locally on your device and is not transmitted to or maintained by MedMio on any server. HIPAA's protections do not apply to MedMio, and MedMio does not claim HIPAA compliance.</p>
-  <p>MedMio no es una entidad cubierta por HIPAA ni un asociado comercial de ninguna entidad cubierta. MedMio no crea, recibe, mantiene ni transmite Información de Salud Protegida (PHI) según la definición de HIPAA, porque todos los datos se almacenan localmente en tu dispositivo y no se transmiten ni mantienen por MedMio en ningún servidor.</p>
-  <div class="warning">
-    ⚠️ If you share MedMio data (via PDF export or screenshot) with a healthcare provider, that provider's own HIPAA obligations govern how they handle that information. MedMio is not responsible for how third parties handle information you choose to share with them.<br><br>
-    Si compartes datos de MedMio (vía exportación PDF o captura de pantalla) con un proveedor de salud, las obligaciones HIPAA del propio proveedor rigen cómo manejan esa información.
-  </div>
-
-  <h2 id="rights">16. Your Rights / Tus derechos</h2>
-  <p>Because MedMio stores all data locally on your device and collects no personal data on servers, most data rights (access, portability, correction, deletion) are exercised directly on your device:</p>
-  <ul>
-    <li><strong>Access:</strong> All your data is visible within the app at all times</li>
-    <li><strong>Correction:</strong> You can edit any medication, schedule, or profile data within the app</li>
+    <li><strong>Access:</strong> All your data is visible within the app</li>
+    <li><strong>Correction:</strong> Edit any medication, schedule, or profile data in the app</li>
     <li><strong>Deletion:</strong> See Section 11</li>
-    <li><strong>Portability:</strong> Use the PDF export feature to export your data</li>
-    <li><strong>Opt-out of OCR:</strong> Simply do not use the camera feature — it is entirely optional</li>
+    <li><strong>Portability:</strong> Use the PDF export feature</li>
+    <li><strong>Opt-out of OCR:</strong> Simply don't use the camera feature</li>
   </ul>
-  <p>California residents: MedMio does not meet the CCPA thresholds (annual gross revenue over $25 million or handling data of 100,000+ consumers). However, we voluntarily provide the rights described above to all users regardless of location.</p>
-  <p>Residentes de California: MedMio no cumple los umbrales de CCPA. Sin embargo, voluntariamente proporcionamos los derechos descritos arriba a todos los usuarios independientemente de su ubicación.</p>
-  <p>EU/EEA residents: MedMio does not transfer personal data to servers in any jurisdiction. The GDPR's data transfer restrictions do not apply because no personal data is transmitted.</p>
-  <p>Residentes de la UE/EEE: MedMio no transfiere datos personales a servidores en ninguna jurisdicción.</p>
+  <p>California residents: MedMio does not meet CCPA thresholds but voluntarily provides the rights above to all users. EU/EEA residents: No personal data is transferred to servers in any jurisdiction.</p>
 
-  <h2 id="changes">17. Changes to This Policy / Cambios a esta política</h2>
-  <p>We may update this Privacy Policy from time to time. When we do, we will update the "Effective" date at the top of this page and increment the version number. We will notify users of material changes through an in-app notice on the next app launch after the change. Continued use of MedMio after changes are posted constitutes acceptance of the updated policy.</p>
-  <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Cuando lo hagamos, actualizaremos la fecha "Vigente" al inicio de esta página e incrementaremos el número de versión. Notificaremos a los usuarios de cambios materiales mediante un aviso en la app en el próximo lanzamiento después del cambio.</p>
-  <p>Previous versions of this policy are available upon request by emailing <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a>.</p>
+  <h2 id="changes">17. Changes</h2>
+  <p>We may update this policy. Material changes will be communicated via in-app notice. Continued use after changes constitutes acceptance. Previous versions available by emailing <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a>.</p>
 
-  <h2 id="contact">18. Contact / Contacto</h2>
-  <p>For questions, concerns, or requests regarding this Privacy Policy:</p>
-  <p><strong>Email:</strong> <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a></p>
-  <p>We aim to respond to all privacy inquiries within 30 days. / Buscamos responder todas las consultas de privacidad dentro de 30 días.</p>
+  <h2 id="contact">18. Contact</h2>
+  <p><strong>Email:</strong> <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a><br>We respond to all privacy inquiries within 30 days.</p>
 
-  <h2>19. Available Languages / Idiomas disponibles</h2>
+  <h2>19. Languages / Idiomas</h2>
   <div class="lang-grid">
-    <div class="lang-card"><strong>🇲🇽 Español</strong>Esta política aplica en todos los idiomas soportados por MedMio.</div>
-    <div class="lang-card"><strong>🇺🇸 English</strong>This policy applies across all languages supported by MedMio.</div>
-    <div class="lang-card"><strong>🇧🇷 Português</strong>Esta política se aplica em todos os idiomas suportados pelo MedMio.</div>
-    <div class="lang-card"><strong>🇫🇷 Français</strong>Cette politique s'applique dans toutes les langues prises en charge par MedMio.</div>
-    <div class="lang-card"><strong>🇩🇪 Deutsch</strong>Diese Richtlinie gilt für alle von MedMio unterstützten Sprachen.</div>
-    <div class="lang-card"><strong>🇨🇳 中文</strong>本政策适用于MedMio支持的所有语言。</div>
-    <div class="lang-card"><strong>🇮🇳 हिन्दी</strong>यह नीति MedMio द्वारा समर्थित सभी भाषाओं पर लागू होती है।</div>
-    <div class="lang-card"><strong>🇯🇵 日本語</strong>このポリシーはMedMioがサポートするすべての言語に適用されます。</div>
-    <div class="lang-card"><strong>🇰🇷 한국어</strong>이 정책은 MedMio가 지원하는 모든 언어에 적용됩니다.</div>
+    <div class="lang-card"><strong>🇲🇽 Español</strong>Esta política aplica en todos los idiomas soportados.</div>
+    <div class="lang-card"><strong>🇺🇸 English</strong>This policy applies across all supported languages.</div>
+    <div class="lang-card"><strong>🇧🇷 Português</strong>Esta política aplica em todos os idiomas suportados.</div>
+    <div class="lang-card"><strong>🇫🇷 Français</strong>Cette politique s'applique dans toutes les langues.</div>
+    <div class="lang-card"><strong>🇩🇪 Deutsch</strong>Diese Richtlinie gilt für alle unterstützten Sprachen.</div>
+    <div class="lang-card"><strong>🇨🇳 中文</strong>本政策适用于所有支持的语言。</div>
+    <div class="lang-card"><strong>🇮🇳 हिन्दी</strong>यह नीति सभी समर्थित भाषाओं पर लागू होती है।</div>
+    <div class="lang-card"><strong>🇯🇵 日本語</strong>このポリシーはすべての対応言語に適用されます。</div>
+    <div class="lang-card"><strong>🇰🇷 한국어</strong>이 정책은 지원되는 모든 언어에 적용됩니다。</div>
   </div>
-
 </main>
 
 <footer>
+  <img src="./mascota_wave.png" alt="MedMio" class="footer-mascot" /><br>
   MedMio © 2026 · <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a><br>
-  Privacy Policy v1.0 · Effective June 22, 2026<br>
-  <a href="https://samg6m-eng.github.io/medmio-privacy">https://samg6m-eng.github.io/medmio-privacy</a>
+  <a href="./index.html" style="color:rgba(255,255,255,0.7)">Privacy Policy</a> · <a href="./Terms.html" style="color:rgba(255,255,255,0.7)">Terms of Service</a><br>
+  <span style="font-size:0.78rem;opacity:0.6">https://samg6m-eng.github.io/medmio-privacy</span>
 </footer>
-
 </body>
 </html>
