@@ -6,136 +6,65 @@
   <title>MedMio — Terms of Service</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f8fafc;
-      color: #1e293b;
-      line-height: 1.7;
-    }
-    header {
-      background: linear-gradient(135deg, #0C3E70, #185FA5, #378ADD);
-      color: white;
-      padding: 48px 24px 40px;
-      text-align: center;
-    }
-    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
-    header p  { font-size: 1rem; opacity: 0.85; }
-    .badge {
-      display: inline-block;
-      background: rgba(255,255,255,0.2);
-      border-radius: 999px;
-      padding: 4px 16px;
-      font-size: 0.8rem;
-      margin-top: 12px;
-    }
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 24px 80px;
-    }
-    .disclaimer {
-      background: #FEF3C7;
-      border-left: 4px solid #F59E0B;
-      border-radius: 10px;
-      padding: 16px 20px;
-      margin-bottom: 32px;
-      font-size: 0.95rem;
-      color: #92400E;
-      font-weight: 500;
-    }
-    .medical {
-      background: #EEF4FB;
-      border-left: 4px solid #185FA5;
-      border-radius: 10px;
-      padding: 16px 20px;
-      margin-bottom: 32px;
-      font-size: 0.95rem;
-      color: #0C3E70;
-      font-weight: 500;
-    }
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #0C3E70;
-      margin: 36px 0 12px;
-      padding-bottom: 6px;
-      border-bottom: 2px solid #E2EEF9;
-    }
-    p  { margin-bottom: 12px; font-size: 0.97rem; color: #334155; }
-    ul { margin: 8px 0 16px 20px; }
-    ul li { margin-bottom: 8px; font-size: 0.97rem; color: #334155; }
-    .highlight {
-      background: #f0fdf4;
-      border-left: 4px solid #1D9E75;
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 16px 0;
-      font-weight: 500;
-      color: #064e3b;
-    }
-    .danger {
-      background: #FEF2F2;
-      border-left: 4px solid #EF4444;
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 16px 0;
-      font-size: 0.95rem;
-      color: #7F1D1D;
-    }
-    .toc {
-      background: white;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 20px 24px;
-      margin-bottom: 32px;
-    }
-    .toc h3 { font-size: 0.9rem; color: #64748b; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #F2F7FD; color: #1e293b; line-height: 1.7; }
+    header { background: linear-gradient(135deg, #0C3E70, #185FA5, #378ADD); padding: 40px 24px 32px; }
+    .header-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; gap: 16px; }
+    .header-mascot { width: 72px; height: 88px; object-fit: contain; }
+    .header-text h1 { font-size: 1.8rem; font-weight: 700; color: #fff; }
+    .header-text .tagline { font-size: 0.85rem; font-style: italic; color: rgba(255,255,255,0.65); margin-top: 2px; }
+    .header-text .subtitle { font-size: 0.95rem; color: rgba(255,255,255,0.85); margin-top: 6px; }
+    .badge { display: inline-block; background: rgba(255,255,255,0.2); border-radius: 999px; padding: 3px 14px; font-size: 0.78rem; color: #fff; margin-top: 8px; }
+    nav { background: rgba(255,255,255,0.12); border-top: 1px solid rgba(255,255,255,0.15); }
+    .nav-inner { max-width: 760px; margin: 0 auto; display: flex; }
+    .nav-inner a { color: rgba(255,255,255,0.85); text-decoration: none; padding: 10px 20px; font-size: 0.88rem; font-weight: 500; border-bottom: 2px solid transparent; }
+    .nav-inner a:hover, .nav-inner a.active { color: #fff; border-bottom-color: #fff; background: rgba(255,255,255,0.08); }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+    .accept-banner { background: #FEF3C7; border-left: 4px solid #F59E0B; border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; font-size: 0.88rem; color: #92400E; font-weight: 500; }
+    .medical { background: #EEF4FB; border-left: 4px solid #185FA5; border-radius: 10px; padding: 14px 18px; margin-bottom: 28px; font-size: 0.88rem; color: #0C3E70; font-weight: 500; }
+    h2 { font-size: 1.1rem; font-weight: 700; color: #0C3E70; margin: 32px 0 10px; padding-bottom: 6px; border-bottom: 2px solid #E2EEF9; }
+    p { margin-bottom: 12px; font-size: 0.95rem; color: #334155; }
+    ul { margin: 8px 0 14px 20px; }
+    ul li { margin-bottom: 6px; font-size: 0.95rem; color: #334155; }
+    .highlight { background: #f0fdf4; border-left: 4px solid #1D9E75; border-radius: 8px; padding: 14px 18px; margin: 14px 0; font-weight: 500; color: #064e3b; font-size: 0.93rem; }
+    .danger { background: #FEF2F2; border-left: 4px solid #EF4444; border-radius: 8px; padding: 14px 18px; margin: 14px 0; font-size: 0.93rem; color: #7F1D1D; }
+    .warning { background: #fff7ed; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 14px 18px; margin: 14px 0; font-size: 0.93rem; color: #92400e; }
+    .toc { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 22px; margin-bottom: 28px; }
+    .toc h3 { font-size: 0.8rem; color: #64748b; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.06em; }
     .toc ol { margin-left: 16px; }
-    .toc ol li { font-size: 0.9rem; margin-bottom: 4px; }
+    .toc ol li { font-size: 0.88rem; margin-bottom: 3px; }
     .toc a { color: #185FA5; text-decoration: none; }
-    .toc a:hover { text-decoration: underline; }
-    .version-box {
-      background: white;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 12px 16px;
-      font-size: 0.85rem;
-      color: #64748b;
-      margin-bottom: 24px;
-    }
-    footer {
-      text-align: center;
-      padding: 32px;
-      font-size: 0.85rem;
-      color: #94a3b8;
-      border-top: 1px solid #e2e8f0;
-    }
+    .version-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 14px; font-size: 0.83rem; color: #64748b; margin-bottom: 20px; }
+    footer { background: linear-gradient(135deg, #0C3E70, #185FA5); color: rgba(255,255,255,0.75); text-align: center; padding: 28px 24px; font-size: 0.83rem; line-height: 1.8; }
+    footer a { color: rgba(255,255,255,0.9); }
+    footer .footer-mascot { width: 40px; margin-bottom: 10px; opacity: 0.9; }
     a { color: #185FA5; }
   </style>
 </head>
 <body>
-
 <header>
-  <h1>🕐 MedMio</h1>
-  <p>Terms of Service — Términos de Servicio</p>
-  <span class="badge">Version 1.0 · Effective / Vigente: June 22, 2026</span>
+  <div class="header-inner">
+    <img src="./mascota_wave.png" alt="MedMio mascot" class="header-mascot" />
+    <div class="header-text">
+      <h1>MedMio</h1>
+      <div class="tagline">tu medicación, a tiempo.</div>
+      <div class="subtitle">Terms of Service · Términos de Servicio</div>
+      <span class="badge">Version 1.0 · June 22, 2026</span>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-inner">
+      <a href="./index.html">🔒 Privacy Policy</a>
+      <a href="./Terms.html" class="active">📋 Terms of Service</a>
+    </div>
+  </nav>
 </header>
 
 <main>
+  <div class="version-box">Last updated: <strong>June 22, 2026</strong> · Version <strong>1.0</strong> · App version: <strong>1.0.0+</strong></div>
 
-  <div class="version-box">
-    📋 Last updated: <strong>June 22, 2026</strong> · Version <strong>1.0</strong> · App version covered: <strong>1.0.0+</strong>
-  </div>
+  <div class="accept-banner">⚠️ BY DOWNLOADING OR USING MEDMIO, YOU AGREE TO THESE TERMS. IF YOU DO NOT AGREE, DO NOT USE THE APP.<br>AL USAR MEDMIO, ACEPTAS ESTOS TÉRMINOS.</div>
 
-  <div class="disclaimer">
-    ⚠️ PLEASE READ THESE TERMS CAREFULLY BEFORE USING MEDMIO. BY DOWNLOADING, INSTALLING, OR USING THE APP, YOU AGREE TO THESE TERMS. IF YOU DO NOT AGREE, DO NOT USE THE APP.<br><br>
-    LEE ESTOS TÉRMINOS CUIDADOSAMENTE ANTES DE USAR MEDMIO. AL DESCARGAR, INSTALAR O USAR LA APP, ACEPTAS ESTOS TÉRMINOS. SI NO ESTÁS DE ACUERDO, NO USES LA APP.
-  </div>
-
-  <div class="medical">
-    ⚕️ <strong>MEDICAL DISCLAIMER:</strong> MedMio is a medication reminder tool ONLY. It is NOT a medical device, does NOT provide medical advice, and does NOT diagnose, treat, cure, or prevent any disease or medical condition. Never use MedMio as a substitute for professional medical advice. Always consult a qualified healthcare professional before making any medication decisions.<br><br>
-    MedMio es ÚNICAMENTE una herramienta de recordatorio. NO es un dispositivo médico, NO proporciona consejo médico, y NO diagnostica, trata, cura ni previene ninguna enfermedad. Nunca uses MedMio como sustituto del consejo médico profesional.
-  </div>
+  <div class="medical">⚕️ <strong>MEDICAL DISCLAIMER:</strong> MedMio is a medication <em>reminder</em> tool ONLY. It is NOT a medical device and does NOT provide medical advice. Never use MedMio as a substitute for professional medical advice. Always consult a qualified healthcare professional.</div>
 
   <div class="toc">
     <h3>Table of Contents / Índice</h3>
@@ -152,251 +81,111 @@
       <li><a href="#limitation">Limitation of Liability</a></li>
       <li><a href="#indemnification">Indemnification</a></li>
       <li><a href="#dmca">Copyright / DMCA</a></li>
-      <li><a href="#termination">Termination</a></li>
+      <li><a href="#data-loss">Data Loss</a></li>
+      <li><a href="#emotional">Emotional Distress Claims</a></li>
+      <li><a href="#caregiver">Caregiver Use</a></li>
+      <li><a href="#devices">Third-Party Devices and OS</a></li>
+      <li><a href="#product-liability">Product Liability</a></li>
+      <li><a href="#force-majeure">Force Majeure</a></li>
       <li><a href="#governing">Governing Law and Disputes</a></li>
       <li><a href="#changes">Changes to Terms</a></li>
       <li><a href="#contact">Contact</a></li>
     </ol>
   </div>
 
-  <h2 id="acceptance">1. Acceptance of Terms / Aceptación de Términos</h2>
-  <p>These Terms of Service ("Terms") constitute a legally binding agreement between you ("User") and the MedMio app developer ("Developer," "we," "us," or "our"). By downloading, installing, accessing, or using MedMio (the "App"), you confirm that you have read, understood, and agree to be bound by these Terms and our <a href="./index.html">Privacy Policy</a>.</p>
-  <p>If you are using MedMio on behalf of another person (such as a family member or patient), you represent that you have authority to bind that person to these Terms.</p>
-  <p>Estos Términos constituyen un acuerdo legalmente vinculante entre tú ("Usuario") y el desarrollador de MedMio ("Desarrollador"). Al descargar, instalar, acceder o usar MedMio, confirmas haber leído, entendido y aceptado estos Términos y nuestra <a href="./index.html">Política de Privacidad</a>.</p>
+  <h2 id="acceptance">1. Acceptance of Terms</h2>
+  <p>These Terms constitute a legally binding agreement between you ("User") and the MedMio developer ("Developer"). By downloading, installing, or using MedMio, you confirm you have read, understood, and agree to these Terms and our <a href="./index.html">Privacy Policy</a>.</p>
 
-  <h2 id="description">2. Description of Service / Descripción del Servicio</h2>
-  <p>MedMio is a personal medication reminder application that helps users remember to take medications at scheduled times. The App provides:</p>
-  <ul>
-    <li>Medication schedule reminders / Recordatorios de horarios de medicamentos</li>
-    <li>Dose tracking and history / Seguimiento de dosis e historial</li>
-    <li>General food interaction information sourced from publicly available FDA data / Información general de interacciones con alimentos de datos FDA de acceso público</li>
-    <li>Medication inventory tracking / Seguimiento de inventario de medicamentos</li>
-    <li>Optional OCR photo scanning to assist in entering medication information / Escaneo OCR fotográfico opcional para asistir en el ingreso de información de medicamentos</li>
-    <li>PDF report generation / Generación de reportes PDF</li>
-  </ul>
-  <p>MedMio is a tool to assist with personal organization only. It is not a clinical tool, a medical record system, or a healthcare service.</p>
+  <h2 id="description">2. Description of Service</h2>
+  <p>MedMio is a personal medication reminder app providing: schedule reminders, dose tracking, general food interaction information (from public FDA data), inventory tracking, optional OCR scanning, and PDF report generation. It is a personal organization tool only — not a clinical tool or healthcare service.</p>
 
-  <h2 id="medical-limitation">3. Medical Limitation / Limitación Médica</h2>
-  <div class="danger">
-    🚫 CRITICAL: MedMio does NOT:
+  <h2 id="medical-limitation">3. Medical Limitation</h2>
+  <div class="danger">🚫 MedMio does NOT:
     <ul style="margin-top:8px">
       <li>Provide medical advice of any kind</li>
-      <li>Verify that medications you enter are correct for your condition</li>
+      <li>Verify medications are correct for your condition</li>
       <li>Verify dosage amounts are safe or appropriate</li>
       <li>Detect drug interactions between medications</li>
       <li>Replace your doctor, pharmacist, or healthcare provider</li>
-      <li>Guarantee reminder delivery (notifications may be affected by device settings, battery, OS restrictions)</li>
-      <li>Take responsibility for missed doses due to app errors, device issues, or notification failures</li>
+      <li>Guarantee reminder delivery (affected by device settings, battery, OS restrictions)</li>
+      <li>Take responsibility for missed doses due to app errors or notification failures</li>
     </ul>
   </div>
-  <p>The food information displayed in MedMio is for general informational purposes only, sourced from publicly available data. It does not account for your specific medical history, allergies, other medications, or individual health conditions. Always consult your pharmacist or physician about food-drug interactions specific to your situation.</p>
-  <p>La información de alimentos mostrada en MedMio es solo para propósitos informativos generales. No tiene en cuenta tu historial médico específico, alergias, otros medicamentos ni condiciones de salud individuales.</p>
-  <p><strong>YOU ASSUME ALL RISK</strong> associated with relying on MedMio for medication management. Developer is not liable for any harm resulting from missed doses, incorrect medication information entered by the user, or reliance on App information.</p>
-  <p><strong>ASUMES TODO EL RIESGO</strong> asociado con confiar en MedMio para el manejo de medicamentos.</p>
+  <p><strong>YOU ASSUME ALL RISK</strong> associated with relying on MedMio for medication management. Developer is not liable for any harm resulting from missed doses, incorrect medication information, or reliance on App information.</p>
 
-  <h2 id="eligibility">4. Eligibility / Elegibilidad</h2>
-  <p>You must be at least 13 years of age (or 16 in the European Union) to use MedMio. By using the App, you represent that you meet this age requirement. If you are using MedMio to manage medications for a minor, you take full responsibility for that use.</p>
-  <p>Debes tener al menos 13 años (o 16 en la Unión Europea) para usar MedMio.</p>
+  <h2 id="eligibility">4. Eligibility</h2>
+  <p>You must be at least 13 years old (16 in the EU) to use MedMio. If using MedMio for a minor, you take full responsibility for that use.</p>
 
-  <h2 id="license">5. License to Use / Licencia de Uso</h2>
-  <p>Subject to these Terms, Developer grants you a limited, non-exclusive, non-transferable, revocable license to download and use MedMio on devices you own or control, solely for your personal, non-commercial purposes.</p>
-  <p>You may NOT:</p>
+  <h2 id="license">5. License to Use</h2>
+  <p>Developer grants you a limited, non-exclusive, non-transferable, revocable license for personal, non-commercial use. You may NOT copy, modify, distribute, reverse engineer, rent, or sublicense the App.</p>
+
+  <h2 id="user-content">6. User Content and Photos</h2>
+  <p>Any content you enter — including photos — is your sole responsibility. You represent that:</p>
   <ul>
-    <li>Copy, modify, or distribute the App or its source code</li>
-    <li>Reverse engineer, decompile, or disassemble the App</li>
-    <li>Use the App for commercial purposes without written permission</li>
-    <li>Rent, lease, or sublicense the App</li>
-    <li>Remove any copyright or proprietary notices</li>
+    <li>You have the right to use any photos you add</li>
+    <li>Photos do not infringe any third party's copyright, trademark, or privacy rights</li>
+    <li>You will not use the App to store or share copyrighted material without authorization</li>
   </ul>
+  <div class="highlight">✅ MedMio stores photos only on YOUR device. We do not host, display, publish, or distribute user photos. MedMio cannot be held liable for how you use, share, or publish content you store using the App.</div>
+  <p><strong>No monitoring:</strong> Developer does not monitor or have access to photos stored on your device and cannot screen content for copyright compliance. You are solely responsible for legal compliance.</p>
 
-  <h2 id="user-content">6. User Content and Photos / Contenido del Usuario y Fotos</h2>
-  <p><strong>Your responsibility:</strong> Any content you enter into MedMio — including medication names, photos, notes, and personal information — is your sole responsibility. You represent and warrant that:</p>
-  <ul>
-    <li>You have the right to use any photos you add to the App / Tienes derecho a usar cualquier foto que agregues a la App</li>
-    <li>Photos you upload do not infringe any third party's copyright, trademark, privacy, or other rights / Las fotos que subes no infringen derechos de terceros</li>
-    <li>You will not use the App to photograph, store, or share copyrighted material without authorization / No usarás la App para fotografiar, almacenar o compartir material con derechos de autor sin autorización</li>
-  </ul>
-  <div class="highlight">
-    ✅ MedMio stores photos only on YOUR device. We do not host, display, publish, or distribute any user photos. MedMio cannot be held liable for how you use, share, or publish photos you take or store using the App.<br><br>
-    MedMio almacena fotos solo en TU dispositivo. No alojamos, mostramos, publicamos ni distribuimos fotos de usuarios. MedMio no puede ser responsabilizado por cómo uses, compartas o publiques fotos que tomes o almacenes usando la App.
-  </div>
-  <p><strong>OCR photos:</strong> When you use the optional OCR feature, photos are transmitted to a secure processing function solely to extract text. They are immediately discarded after processing and never stored on any server. You are responsible for ensuring any photo you submit for OCR processing does not contain private information of third parties without their consent.</p>
-  <p><strong>Fotos OCR:</strong> Cuando usas la función OCR opcional, las fotos se transmiten a una función de procesamiento segura únicamente para extraer texto. Se descartan inmediatamente después del procesamiento.</p>
-  <p><strong>No monitoring:</strong> Developer does not monitor, review, or have access to photos stored on your device. Developer cannot and does not screen user-generated content for copyright compliance. You are solely responsible for ensuring your use of photos complies with applicable law.</p>
+  <h2 id="prohibited">7. Prohibited Uses</h2>
+  <p>You agree NOT to use MedMio to: infringe third-party IP rights; violate applicable law; impersonate any person; attempt unauthorized access; rely on the App as your sole method of medication management in life-threatening situations; or store/manage controlled substances in violation of law.</p>
 
-  <h2 id="prohibited">7. Prohibited Uses / Usos Prohibidos</h2>
-  <p>You agree NOT to use MedMio to:</p>
-  <ul>
-    <li>Store, process, or share any content that infringes copyrights, trademarks, or other intellectual property rights of third parties</li>
-    <li>Violate any applicable local, national, or international law or regulation</li>
-    <li>Impersonate any person or entity</li>
-    <li>Transmit any unsolicited commercial communications</li>
-    <li>Attempt to gain unauthorized access to any part of the App</li>
-    <li>Use the App in any way that could disable, overburden, or impair it</li>
-    <li>Use the App to store or manage controlled substances in a manner that violates applicable law</li>
-    <li>Rely on the App as your sole method of medication management in life-threatening or emergency situations</li>
-  </ul>
+  <h2 id="ip">8. Intellectual Property</h2>
+  <p>MedMio and all its content are owned by Developer and protected by applicable IP laws. Drug names and generic names may be trademarked by their respective owners — MedMio does not claim ownership of any drug names.</p>
 
-  <h2 id="ip">8. Intellectual Property / Propiedad Intelectual</h2>
-  <p>MedMio and all its content, features, and functionality — including but not limited to text, graphics, logos, icons, images, and software — are owned by Developer and are protected by applicable intellectual property laws.</p>
-  <p>The medication information database included in MedMio is compiled from publicly available sources including FDA drug databases. Drug names and generic names may be trademarked by their respective owners. MedMio does not claim ownership of any drug names, trademarks, or brand names that appear in the medication database.</p>
-  <p>MedMio y todo su contenido son propiedad del Desarrollador y están protegidos por las leyes de propiedad intelectual aplicables.</p>
+  <h2 id="disclaimer-warranty">9. Disclaimer of Warranties</h2>
+  <p><strong>THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND.</strong> Developer disclaims all warranties including merchantability, fitness for a particular purpose, and non-infringement. Reminder delivery is not guaranteed — do not rely solely on MedMio notifications.</p>
 
-  <h2 id="disclaimer-warranty">9. Disclaimer of Warranties / Renuncia de Garantías</h2>
-  <p><strong>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.</strong> To the fullest extent permitted by law, Developer expressly disclaims all warranties, including but not limited to:</p>
-  <ul>
-    <li>Warranties of merchantability, fitness for a particular purpose, and non-infringement</li>
-    <li>That the App will be uninterrupted, error-free, or secure</li>
-    <li>That reminders will be delivered at the scheduled time</li>
-    <li>That medication information in the App is complete, accurate, or current</li>
-    <li>That the App will meet your specific requirements</li>
-    <li>That any errors in the App will be corrected</li>
-  </ul>
-  <p><strong>Notification delivery is not guaranteed.</strong> Reminders may fail to appear due to device settings, battery saver modes, operating system restrictions, Do Not Disturb settings, or other factors outside Developer's control. Do not rely solely on MedMio notifications as your only method of remembering medication.</p>
-  <p><strong>LA APP SE PROPORCIONA "TAL CUAL" SIN GARANTÍAS DE NINGÚN TIPO.</strong> No garantizamos que los recordatorios se entregarán a tiempo ni que la información de medicamentos sea completa o precisa.</p>
+  <h2 id="limitation">10. Limitation of Liability</h2>
+  <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, DEVELOPER IS NOT LIABLE FOR:</strong> indirect, incidental, or consequential damages; missed doses or incorrect medication information; notification delivery failures; data loss; or copyright infringement arising from content you store or share.</p>
+  <p><strong>Developer's total liability shall not exceed the amount you paid for the App in the 12 months preceding the claim (or $10 USD if free).</strong></p>
 
-  <h2 id="limitation">10. Limitation of Liability / Limitación de Responsabilidad</h2>
-  <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL DEVELOPER BE LIABLE FOR:</strong></p>
-  <ul>
-    <li>Any indirect, incidental, special, consequential, or punitive damages</li>
-    <li>Any loss of profits, revenue, data, business, or goodwill</li>
-    <li>Any personal injury or death resulting from use of or inability to use the App</li>
-    <li>Any medical harm resulting from missed doses, incorrect medication information, or reliance on App content</li>
-    <li>Any damages resulting from notification delivery failures</li>
-    <li>Any damages resulting from unauthorized access to or alteration of your data on your device</li>
-    <li>Any copyright infringement claims arising from content you store or share using the App</li>
-    <li>Any damages resulting from third-party actions taken with content you share from the App</li>
-  </ul>
-  <p><strong>IN ANY CASE, DEVELOPER'S TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM YOUR USE OF THE APP SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE 12 MONTHS PRECEDING THE CLAIM</strong> (or $10 USD if the App was free to you).</p>
-  <p>Some jurisdictions do not allow the exclusion of certain warranties or limitation of liability. In such jurisdictions, our liability is limited to the greatest extent permitted by law.</p>
-  <p><strong>EN NINGÚN CASO EL DESARROLLADOR SERÁ RESPONSABLE DE DAÑOS INDIRECTOS, INCIDENTALES, ESPECIALES, CONSECUENTES O PUNITIVOS.</strong> La responsabilidad total del Desarrollador no excederá el monto que pagaste por la App en los 12 meses anteriores al reclamo (o $10 USD si la App fue gratuita).</p>
-
-  <h2 id="indemnification">11. Indemnification / Indemnización</h2>
-  <p>You agree to defend, indemnify, and hold harmless Developer from and against any and all claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including attorney's fees) arising from:</p>
-  <ul>
-    <li>Your use of or access to the App</li>
-    <li>Any content you store, process, or share using the App, including photos</li>
-    <li>Your violation of any third party's rights, including copyright, trademark, or privacy rights</li>
-    <li>Your violation of these Terms</li>
-    <li>Any claim that content you provided caused damage to a third party</li>
-    <li>Any misuse of the App for purposes other than personal medication reminders</li>
-  </ul>
-  <p>Aceptas defender, indemnizar y mantener indemne al Desarrollador de cualquier reclamo que surja de tu uso de la App, el contenido que almacenas o compartes, o la violación de derechos de terceros.</p>
+  <h2 id="indemnification">11. Indemnification</h2>
+  <p>You agree to defend and hold harmless Developer from claims arising from: your use of the App; content you store or share (including photos); violation of third-party rights; your violation of these Terms; or misuse of the App.</p>
 
   <h2 id="dmca">12. Copyright / DMCA</h2>
-  <p>MedMio does not host user-generated content on any public server. Photos and content you add to MedMio are stored only on your device and are not accessible to Developer or any third party through MedMio's infrastructure.</p>
-  <p>Because MedMio does not host user content publicly, formal DMCA takedown procedures do not apply in the traditional sense. However, if you believe MedMio's own app content (not user-uploaded content) infringes your copyright, please contact us at <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a> with:</p>
-  <ul>
-    <li>A description of the copyrighted work you claim has been infringed</li>
-    <li>The specific location in the App of the allegedly infringing material</li>
-    <li>Your contact information</li>
-    <li>A statement of good faith belief that the use is not authorized</li>
-    <li>A statement under penalty of perjury that the information is accurate and you are the copyright owner or authorized to act on their behalf</li>
-  </ul>
-  <p>We will respond to valid copyright notices within 30 days.</p>
-  <p>Debido a que MedMio no aloja contenido de usuarios públicamente, los procedimientos DMCA tradicionales no aplican. Si crees que el contenido propio de la App infringe tus derechos de autor, contáctanos en <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a>.</p>
+  <p>MedMio does not host user content publicly — DMCA takedown procedures do not apply to user-uploaded content. If you believe MedMio's own app content infringes your copyright, contact <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a> with: description of the work, location in the App, your contact info, and a good faith statement.</p>
 
-  <h2 id="termination">13. Termination / Terminación</h2>
-  <p>These Terms remain in effect until terminated. You may terminate this agreement at any time by uninstalling the App. All provisions that by their nature should survive termination shall survive, including but not limited to: disclaimer of warranties, limitation of liability, and indemnification.</p>
-  <p>Developer reserves the right to suspend or terminate your access to the App at any time, without notice, for conduct that violates these Terms or is harmful to other users, Developer, or third parties.</p>
+  <h2 id="data-loss">13. Data Loss</h2>
+  <p>Developer is not responsible for data loss from device failure, OS updates, uninstallation, factory reset, or storage corruption. Regularly export your data via the PDF export feature. MedMio does not provide cloud backup.</p>
 
-  <h2 id="governing">14. Governing Law and Disputes / Ley Aplicable y Disputas</h2>
-  <p>These Terms are governed by and construed in accordance with applicable law. For users in the United States, any disputes shall be resolved through binding arbitration rather than in court, except that either party may bring claims in small claims court. <strong>YOU WAIVE ANY RIGHT TO A JURY TRIAL OR TO PARTICIPATE IN A CLASS ACTION.</strong></p>
-  <p>For users outside the United States, disputes shall be resolved in the jurisdiction where you reside, subject to applicable consumer protection laws that cannot be waived by contract.</p>
-  <p><strong>Informal resolution first:</strong> Before initiating any formal dispute, you agree to contact Developer at <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a> and attempt to resolve the dispute informally for at least 30 days.</p>
-  <p>Estos Términos se rigen por la ley aplicable. Para usuarios en Estados Unidos, las disputas se resolverán mediante arbitraje vinculante. <strong>RENUNCIAS A CUALQUIER DERECHO A JUICIO CON JURADO O A PARTICIPAR EN UNA ACCIÓN COLECTIVA.</strong></p>
-  <p>Resolución informal primero: Antes de iniciar cualquier disputa formal, acepta contactarnos en <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a> e intentar resolver la disputa informalmente durante al menos 30 días.</p>
+  <h2 id="emotional">14. Emotional Distress Claims</h2>
+  <p>Developer expressly disclaims liability for emotional distress, anxiety, or psychological harm allegedly arising from App use, including stress from missed reminders, anxiety from adherence statistics, or distress from App errors. If experiencing a mental health or medical emergency, contact emergency services immediately.</p>
 
-  <h2 id="changes">15. Changes to Terms / Cambios a los Términos</h2>
-  <p>Developer reserves the right to modify these Terms at any time. Material changes will be communicated through an in-app notice on next app launch. Your continued use of MedMio after changes are effective constitutes acceptance of the revised Terms. If you do not agree to the revised Terms, you must stop using the App.</p>
-  <p>El Desarrollador se reserva el derecho de modificar estos Términos en cualquier momento. Los cambios materiales se comunicarán mediante un aviso en la app.</p>
+  <h2 id="caregiver">15. Caregiver Use</h2>
+  <p>If managing medications for another person, you are solely responsible for accuracy of information entered, obtaining appropriate consent, and any harm to the person in your care. You indemnify Developer against claims arising from your caregiver use of MedMio.</p>
 
-  <h2 id="contact">16. Contact / Contacto</h2>
-  <p>For questions about these Terms: <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a></p>
-  <p>We aim to respond within 30 days. / Respondemos dentro de 30 días.</p>
+  <h2 id="devices">16. Third-Party Devices and OS</h2>
+  <p>Developer is not liable for malfunction caused by custom ROMs, aggressive battery optimization, Do Not Disturb settings, manufacturer customizations, conflicts with other apps, or unsupported OS versions.</p>
 
-  
-  <h2 id="addiction">17. No Addictive Design / Sin Diseño Adictivo</h2>
-  <p>MedMio is a utility tool designed to help users remember medications. The App does not use engagement-maximizing algorithms, infinite scroll, push notification dark patterns, streaks that penalize users for not opening the app, social comparison features, or any design pattern intended to create compulsive use. Notifications are triggered solely by medication schedules configured by the user — not by engagement optimization.</p>
-  <p>MedMio es una herramienta de utilidad. La App no usa algoritmos de maximización de engagement, scroll infinito, patrones oscuros de notificación, rachas que penalizan al usuario por no abrir la app, ni ningún patrón de diseño destinado a crear uso compulsivo.</p>
+  <h2 id="product-liability">17. Product Liability</h2>
+  <p>MedMio is a software application, not a physical product or medical device. Product liability laws applicable to physical goods do not apply to MedMio. MedMio does not manufacture, distribute, recommend, or endorse any medication.</p>
 
-  <h2 id="data-loss">18. Data Loss / Pérdida de Datos</h2>
-  <p>All MedMio data is stored locally on your device. Developer is not responsible for data loss resulting from:</p>
-  <ul>
-    <li>Device failure, damage, theft, or loss</li>
-    <li>Operating system updates that affect app behavior</li>
-    <li>App uninstallation</li>
-    <li>Factory reset of your device</li>
-    <li>Corruption of local storage on your device</li>
-    <li>Any action taken by you or a third party on your device</li>
-  </ul>
-  <p>Developer strongly recommends regularly exporting your data via the PDF export feature as a personal backup. MedMio does not provide cloud backup. You are solely responsible for maintaining copies of your data.</p>
-  <p>El Desarrollador no es responsable de la pérdida de datos almacenados localmente en tu dispositivo por cualquier causa.</p>
+  <h2 id="force-majeure">18. Force Majeure</h2>
+  <p>Developer is not liable for failures caused by circumstances beyond reasonable control including natural disasters, pandemics, power outages, internet failures, or App Store unavailability.</p>
 
-  <h2 id="emotional-distress">19. Emotional Distress Claims / Reclamos de Angustia Emocional</h2>
-  <p>MedMio is a medication reminder tool. Developer expressly disclaims any liability for claims of emotional distress, anxiety, depression, or psychological harm allegedly arising from use of the App, including but not limited to:</p>
-  <ul>
-    <li>Stress caused by missed medication reminders</li>
-    <li>Anxiety related to viewing medication history or adherence statistics</li>
-    <li>Distress caused by App errors, crashes, or unavailability</li>
-    <li>Any psychological effect of using a medication management tool</li>
-  </ul>
-  <p>If you are experiencing a mental health crisis or medical emergency, contact emergency services immediately. MedMio is not a crisis intervention tool.</p>
-  <p>Si estás experimentando una crisis de salud mental o emergencia médica, contacta los servicios de emergencia de inmediato. MedMio no es una herramienta de intervención en crisis.</p>
+  <h2 id="governing">19. Governing Law and Disputes</h2>
+  <p>For US users, disputes shall be resolved through binding arbitration. <strong>YOU WAIVE ANY RIGHT TO A JURY TRIAL OR CLASS ACTION.</strong> For non-US users, disputes are resolved per applicable consumer protection laws.</p>
+  <p><strong>Informal resolution first:</strong> Contact <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a> and attempt informal resolution for at least 30 days before any formal dispute.</p>
 
-  <h2 id="accessibility-claims">20. Accessibility / Accesibilidad</h2>
-  <p>MedMio includes accessibility features such as large text options and voice readout of medication names. However, Developer does not warrant that the App meets any specific accessibility standard (such as WCAG) or that it is fully accessible to all users with disabilities. Users with specific accessibility needs should evaluate the App before relying on it for medication management.</p>
-  <p>MedMio incluye funciones de accesibilidad, pero el Desarrollador no garantiza que la App cumpla con ningún estándar de accesibilidad específico.</p>
+  <h2 id="changes">20. Changes to Terms</h2>
+  <p>Developer may modify these Terms at any time. Material changes will be communicated via in-app notice. Continued use constitutes acceptance. If you do not agree to revised Terms, stop using the App.</p>
 
-  <h2 id="third-party-devices">21. Third-Party Devices and OS / Dispositivos y Sistemas Operativos de Terceros</h2>
-  <p>MedMio's performance depends on the device, operating system, and configuration you use. Developer is not liable for App malfunction, notification failure, or data issues caused by:</p>
-  <ul>
-    <li>Custom Android ROMs or modified operating systems</li>
-    <li>Aggressive battery optimization settings that kill background processes</li>
-    <li>Do Not Disturb, Focus Mode, or similar OS-level notification blocking</li>
-    <li>Device manufacturer customizations that restrict app behavior</li>
-    <li>Conflicts with other installed applications</li>
-    <li>Operating system versions not officially supported by the App</li>
-  </ul>
-  <p>El Desarrollador no es responsable del mal funcionamiento de la App causado por configuraciones del dispositivo, sistemas operativos modificados o restricciones del fabricante.</p>
+  <h2 id="contact">21. Contact</h2>
+  <p><strong>Email:</strong> <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a><br>We respond within 30 days.</p>
 
-  <h2 id="caregiver">22. Caregiver Use / Uso por Cuidadores</h2>
-  <p>If you use MedMio to manage medications for another person (a family member, patient, or person in your care), you acknowledge that:</p>
-  <ul>
-    <li>You are solely responsible for the accuracy of medication information you enter</li>
-    <li>You must obtain appropriate consent from the person whose medications you are managing</li>
-    <li>MedMio is not a substitute for professional caregiving, nursing, or medical supervision</li>
-    <li>Developer is not liable for any harm to the person in your care arising from your use of MedMio</li>
-    <li>You indemnify Developer against any claims arising from your use of MedMio to manage another person's medications</li>
-  </ul>
-  <p>Si usas MedMio para gestionar los medicamentos de otra persona, eres el único responsable de la exactitud de la información ingresada y de obtener el consentimiento apropiado.</p>
-
-  <h2 id="product-liability">23. Product Liability / Responsabilidad de Producto</h2>
-  <p>MedMio is a software application, not a physical product or medical device. To the fullest extent permitted by law, product liability laws applicable to physical goods do not apply to MedMio. MedMio does not manufacture, distribute, recommend, or endorse any medication, supplement, or health product. Any medication information displayed in the App is informational only and sourced from publicly available databases.</p>
-  <p>MedMio es una aplicación de software, no un producto físico ni un dispositivo médico. Las leyes de responsabilidad de producto aplicables a bienes físicos no aplican a MedMio en la máxima medida permitida por la ley.</p>
-
-  <h2 id="force-majeure">24. Force Majeure / Fuerza Mayor</h2>
-  <p>Developer is not liable for any failure to perform obligations under these Terms due to circumstances beyond reasonable control, including but not limited to: natural disasters, pandemics, government actions, power outages, internet infrastructure failures, App Store or Play Store unavailability, or third-party service outages.</p>
-  <p>El Desarrollador no es responsable por fallas causadas por circunstancias fuera de su control razonable.</p>
-
-  <h2 id="entire-agreement">25. Entire Agreement / Acuerdo Completo</h2>
-  <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Developer regarding MedMio and supersede all prior agreements, representations, or understandings. If any provision of these Terms is found invalid or unenforceable, the remaining provisions will continue in full force and effect (severability). Developer's failure to enforce any right under these Terms does not constitute a waiver of that right.</p>
-  <p>Estos Términos, junto con nuestra Política de Privacidad, constituyen el acuerdo completo entre tú y el Desarrollador respecto a MedMio.</p>
-
-
-  <p style="margin-top:40px; padding:16px; background:#f8fafc; border-radius:8px; font-size:0.85rem; color:#64748b;">
-    <strong>Note:</strong> These Terms of Service were last reviewed on June 22, 2026. They are intended to be legally protective but are not a substitute for advice from a licensed attorney in your jurisdiction. If you are operating MedMio as a business or clinical tool, consult an attorney.
+  <p style="margin-top:36px;padding:14px;background:#f8fafc;border-radius:8px;font-size:0.82rem;color:#64748b;">
+    <strong>Note:</strong> These Terms were last reviewed June 22, 2026. They are not a substitute for advice from a licensed attorney in your jurisdiction.
   </p>
-
 </main>
 
 <footer>
+  <img src="./mascota_wave.png" alt="MedMio" class="footer-mascot" /><br>
   MedMio © 2026 · <a href="mailto:medmioapp@gmail.com">medmioapp@gmail.com</a><br>
-  Terms of Service v1.0 · Effective June 22, 2026<br>
-  <a href="./index.html">Privacy Policy</a> · 
-  <a href="https://samg6m-eng.github.io/medmio-privacy">https://samg6m-eng.github.io/medmio-privacy</a>
+  <a href="./index.html" style="color:rgba(255,255,255,0.7)">Privacy Policy</a> · <a href="./Terms.html" style="color:rgba(255,255,255,0.7)">Terms of Service</a><br>
+  <span style="font-size:0.78rem;opacity:0.6">https://samg6m-eng.github.io/medmio-privacy</span>
 </footer>
-
 </body>
 </html>
-<!-- ADDENDUM: inserted before closing </main> tag -->
